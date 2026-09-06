@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "npm install --prefix frontend && npm run build --prefix frontend && node -e \"require('fs').cpSync('frontend/dist', 'backend/public', {recursive:true})\"",
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend && node -e \"require('fs').cpSync('frontend/dist', 'backend/public', {recursive:true})\"",
     "start": "node backend/server.js"
   }
 }
